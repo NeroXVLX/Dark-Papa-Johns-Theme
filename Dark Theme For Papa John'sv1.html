@@ -1,0 +1,581 @@
+
+<!-- saved from url=(0067)chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit.html?id=53 -->
+<html id="stylus" lang="en-US" class="" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/global.css" rel="stylesheet">
+    
+
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/polyfill.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/toolbox.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/msg.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/prefs.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/dom.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/localization.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/content/style-injector.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/content/apply.js"></script>
+
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/sections-util.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/codemirror-themes.js"></script> <!-- must precede base.js -->
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/base.js"></script><title>Dark Theme For Papa John's - Stylus</title>
+
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/lib/codemirror.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/mode/css/css.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/mode/stylus/stylus.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/dialog/dialog.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/edit/closebrackets.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/scroll/annotatescrollbar.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/search/searchcursor.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/search/matchesonscrollbar.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/comment/comment.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/selection/active-line.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/foldcode.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/foldgutter.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/brace-fold.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/indent-fold.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/comment-fold.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/lint/lint.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/hint/show-hint.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/hint/css-hint.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/keymap/sublime.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor-overwrites/codemirror-addon/match-highlighter.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/lz-string-unsafe/lz-string-unsafe.min.js"></script>
+
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/color/color-converter.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/color/color-mimicry.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/color/color-picker.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/color/color-view.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/storage-util.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/worker-util.js"></script>
+
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/util.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/codemirror-default.js"></script><script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/keymap/emacs.js"></script><script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/keymap/vim.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/codemirror-factory.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/moz-section-finder.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/moz-section-widget.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/linter-manager.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/beautify.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/source-editor.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/sections-editor-section.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/sections-editor.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/usw-integration.js"></script>
+    <script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/edit.js"></script>
+
+    <template data-id="appliesTo"></template>
+
+    <template data-id="appliesToEverything"></template>
+
+    <template data-id="section"></template>
+
+    <template data-id="searchReplaceDialog"></template>
+
+    <template data-id="clearSearch"></template>
+
+    <template data-id="find"></template>
+
+    <template data-id="replace"></template>
+
+    <template data-id="jumpToLine"></template>
+
+    <template data-id="regexpTestPartial"></template>
+
+    <template data-id="resizeGrip"></template>
+
+    <template data-id="keymapHelp"></template>
+
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/lib/codemirror.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/dialog/dialog.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/fold/foldgutter.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/hint/show-hint.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/lint/lint.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/addon/search/matchesonscrollbar.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/js/color/color-picker.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/codemirror-default.css" rel="stylesheet">
+    <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/edit.css" rel="stylesheet">
+  <link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor/codemirror/theme/twilight.css" rel="stylesheet" id="cm-theme"><script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/autocomplete.js"></script><script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/global-search.js"></script><link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit/global-search.css" rel="stylesheet"><script src="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/vendor-overwrites/beautify/beautify-css-mod.js"></script><link href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/spinner.css" rel="stylesheet"></head>
+
+  <body id="stylus-edit" class="" style="">
+    <div id="header">
+      <h1 id="heading" data-add="Add Style" data-edit="Edit Style"></h1>
+      <section id="basic-info">
+        <div id="basic-info-name">
+          <input id="name" class="style-contributor" spellcheck="false" placeholder="Enter a name" title="" required="" data-focused-via-click="">
+          <a id="reset-name" tabindex="0" title="Stop using customized name, switch to the style&#39;s own name" data-title="Stop using customized name, switch to the style&#39;s own name">
+            <svg class="svg-icon" viewBox="0 0 20 20">
+              <polygon points="16.2,5.5 14.5,3.8 10,8.3 5.5,3.8 3.8,5.5 8.3,10 3.8,14.5
+                               5.5,16.2 10,11.7 14.5,16.2 16.2,14.5 11.7,10 "></polygon>
+            </svg>
+          </a>
+          <a id="url" target="_blank" href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/edit.html?id=53"><svg class="svg-icon"><use xlink:href="#svg-icon-external-link"></use></svg></a>
+        </div>
+        <div id="basic-info-enabled">
+          <label id="enabled-label" data-hotkey-tooltip="toggleStyle" title="Toggle style
+Alt-Enter" data-title="Toggle style">Enabled
+            <input type="checkbox" id="enabled" class="style-contributor">
+            <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+          </label>
+          <label id="preview-label" title="Temporarily applies the changes without saving.
+Save the style to make the changes permanent." data-title="Temporarily applies the changes without saving.
+Save the style to make the changes permanent.">Live preview
+            <input type="checkbox" id="editor.livePreview">
+            <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+          </label>
+          <span id="preview-errors" class="hidden">!</span>
+        </div>
+      </section>
+      <section id="actions">
+        <div>
+          <button id="save-button" data-hotkey-tooltip="save" title="Ctrl-S" data-focused-via-click="" disabled="">Save</button>
+          <button id="beautify" data-focused-via-click="">Beautify</button>
+          <a href="chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html" tabindex="-1"><button id="cancel-button">Back to manage</button></a>
+        </div>
+        <div id="mozilla-format-buttons" class="sectioned-only">
+          <button id="from-mozilla">Import</button>
+          <button id="to-mozilla" data-focused-via-click="">Export</button>
+          <a id="to-mozilla-help" class="svg-inline-wrapper" tabindex="0" title="Mozilla Format" data-title="Mozilla Format">
+            <svg class="svg-icon info"><use xlink:href="#svg-icon-help"></use></svg>
+          </a>
+        </div>
+      </section>
+      <div id="details-wrapper">
+        <details id="options" data-pref="editor.options.expanded" class="ignore-pref-if-compact" open="">
+          <summary><h2 id="options-heading">Options</h2></summary>
+          <div id="options-wrapper">
+            <div class="options-column">
+              <div class="option">
+                <label id="lineWrapping-label">Word wrap
+                  <input id="editor.lineWrapping" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label id="smartIndent-label">Use smart indentatio­n
+                  <input id="editor.smartIndent" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label id="indentWithTabs-label">Use tabs with smart indentatio­n
+                  <input id="editor.indentWithTabs" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label title="Automatically add a closing pair when typing an opening one of ()[]{}&#39;&#39;&quot;&quot;" data-title="Automatically add a closing pair when typing an opening one of ()[]{}&#39;&#39;&quot;&quot;">Autoclose brackets and quotes
+                  <input id="editor.autoCloseBrackets" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label>Autocomple­te on typing
+                  <input id="editor.autocompleteOnTyping" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label title="Examples of tokens: .foo-bar-2 #aabbcc 0.32 !important
+When disabled: punctuation-delimited words are selected." data-title="Examples of tokens: .foo-bar-2 #aabbcc 0.32 !important
+When disabled: punctuation-delimited words are selected.">Double-clicking selects tokens
+                  <input id="editor.selectByTokens" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+              <div class="option">
+                <label>Colorpicke­rs for CSS colors
+                  <input id="editor.colorpicker" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+                <a id="colorpicker-settings" class="svg-inline-wrapper" tabindex="0" title="Define keyboard shortcuts" data-title="Define keyboard shortcuts">
+                  <svg class="svg-icon settings"><use xlink:href="#svg-icon-config"></use></svg>
+                </a>
+              </div>
+              <div class="option usercss-only">
+                <label title="Does not work with minified CSS" data-title="Does not work with minified CSS">Display 'Applies to' info
+                  <input id="editor.appliesToLineWidget" type="checkbox">
+                  <svg class="svg-icon checked"><use xlink:href="#svg-icon-checked"></use></svg>
+                </label>
+              </div>
+            </div>
+            <div class="options-column">
+              <div class="option aligned">
+                <label id="tabSize-label" for="editor.tabSize">Tab size</label>
+                <input id="editor.tabSize" type="number" min="0">
+              </div>
+              <div class="option aligned">
+                <label id="keyMap-label" for="editor.keyMap">Keymap</label>
+                <div class="select-resizer">
+                  <select id="editor.keyMap"><option value="basic">basic</option><optgroup label="default"><option value="default">default</option><option value="macDefault">default-Mac</option><option value="pcDefault">default-PC</option></optgroup><optgroup label="emacs"><option value="emacs">emacs</option><option value="emacsy">emacsy</option></optgroup><optgroup label="sublime"><option value="sublime" data-default="" title="default">sublime</option><option value="macSublime">sublime-Mac</option><option value="pcSublime">sublime-PC</option></optgroup><optgroup label="vim"><option value="vim">vim</option><option value="vim-insert">vim-insert</option><option value="vim-replace">vim-replace</option></optgroup></select>
+                  <svg class="svg-icon select-arrow"><use xlink:href="#svg-icon-select-arrow"></use></svg>
+                </div>
+                <a id="keyMap-help" class="svg-inline-wrapper" tabindex="0">
+                  <svg class="svg-icon info"><use xlink:href="#svg-icon-help"></use></svg>
+                </a>
+              </div>
+              <div class="option aligned">
+                <label id="theme-label" for="editor.theme">Theme</label>
+                <div class="select-resizer">
+                  <select id="editor.theme"><option value="default">default</option><option>3024-day</option><option>3024-night</option><option>abbott</option><option>abcdef</option><option>ambiance</option><option>ambiance-mobile</option><option>ayu-dark</option><option>ayu-mirage</option><option>base16-dark</option><option>base16-light</option><option>bespin</option><option>blackboard</option><option>cobalt</option><option>colorforth</option><option>darcula</option><option>dracula</option><option>duotone-dark</option><option>duotone-light</option><option>eclipse</option><option>elegant</option><option>erlang-dark</option><option>gruvbox-dark</option><option>hopscotch</option><option>icecoder</option><option>idea</option><option>isotope</option><option>juejin</option><option>lesser-dark</option><option>liquibyte</option><option>lucario</option><option>material</option><option>material-darker</option><option>material-ocean</option><option>material-palenight</option><option>mbo</option><option>mdn-like</option><option>midnight</option><option>monokai</option><option>moxer</option><option>neat</option><option>neo</option><option>night</option><option>nord</option><option>oceanic-next</option><option>panda-syntax</option><option>paraiso-dark</option><option>paraiso-light</option><option>pastel-on-dark</option><option>railscasts</option><option>rubyblue</option><option>seti</option><option>shadowfox</option><option>solarized</option><option>ssms</option><option>the-matrix</option><option>tomorrow-night-bright</option><option>tomorrow-night-eighties</option><option>ttcn</option><option>twilight</option><option>vibrant-ink</option><option>xq-dark</option><option>xq-light</option><option>yeti</option><option>yonce</option><option>zenburn</option></select>
+                  <svg class="svg-icon select-arrow"><use xlink:href="#svg-icon-select-arrow"></use></svg>
+                </div>
+              </div>
+              <div class="option aligned">
+                <label id="highlight-label" for="editor.matchHighlight">Highlight</label>
+                <div class="select-resizer">
+                  <select id="editor.matchHighlight">
+                    <option value="token">Token under cursor
+                    </option><option value="selection">Selection only
+                    </option><option value="">Disabled
+                  </option></select>
+                  <svg class="svg-icon select-arrow"><use xlink:href="#svg-icon-select-arrow"></use></svg>
+                </div>
+              </div>
+              <div class="option aligned">
+                <label id="linter-label" for="editor.linter">CSS Linter</label>
+                  <div class="select-resizer">
+                    <select id="editor.linter">
+                      <option value="csslint" selected="">CSSLint</option>
+                      <option value="stylelint">Stylelint</option>
+                      <option value="">Disabled</option>
+                    </select>
+                    <svg class="svg-icon select-arrow"><use xlink:href="#svg-icon-select-arrow"></use></svg>
+                  </div>
+                <a id="linter-settings" class="svg-inline-wrapper" tabindex="0" title="Click to configure this linter" data-title="Click to configure this linter">
+                  <svg class="svg-icon settings"><use xlink:href="#svg-icon-config"></use></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </details>
+        <details id="publish" data-pref="editor.publish.expanded" class="ignore-pref-if-compact" open="">
+          <summary><h2>Publish</h2></summary>
+          <div>
+            <a id="usw-url" href="https://userstyles.world/" target="_blank">Using userstyles.world</a>
+            <div id="usw-link-info">
+              <dl><dt>Style name</dt><dd data-usw="name" title=""></dd></dl>
+              <dl><dt>Descriptio­n</dt><dd data-usw="description" title=""></dd></dl>
+            </div>
+            <div>
+              <button id="usw-publish-style" data-push="Push update" data-publish="Publish style" data-focused-via-click="" disabled=""></button>
+              <button id="usw-disconnect">Disconnect</button>
+              <span id="usw-progress"><div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></span>
+            </div>
+          </div>
+        </details>
+        <details id="sections-list" data-pref="editor.toc.expanded" class="ignore-pref-if-compact" open="">
+          <summary><h2>Sections</h2></summary>
+          <ol id="toc"><li tabindex="0" class="current">Headder</li></ol>
+        </details>
+        <details id="lint" data-pref="editor.lint.expanded" class="ignore-pref-if-compact" open="">
+          <summary>
+            <h2>Issues: <span id="issue-count">3</span>
+              <a id="lint-help" class="svg-inline-wrapper intercepts-click" tabindex="0">
+                <svg class="svg-icon info"><use xlink:href="#svg-icon-help"></use></svg>
+              </a>
+            </h2>
+          </summary>
+          <div class="lint-scroll-container">
+            <div class="lint-report-container"><table class=""><caption>Code 1</caption><tbody><tr class="warning"><td role="severity" data-rule="duplicate-properties"><div class="CodeMirror-lint-marker CodeMirror-lint-marker-warning">warning</div></td><td role="line">132</td><td role="sep">:</td><td role="col">5</td><td role="message" title="Ungrouped duplicate &#39;transition&#39;.
+(duplicate-properties)">Ungrouped duplicate 'transition'.</td></tr><tr class="warning"><td role="severity" data-rule="known-properties"><div class="CodeMirror-lint-marker CodeMirror-lint-marker-warning">warning</div></td><td role="line">228</td><td role="sep">:</td><td role="col">25</td><td role="message" title="Unknown property &#39;option-font-weight&#39;.
+(known-properties)">Unknown property 'option-font-weight'.</td></tr><tr class="warning"><td role="severity" data-rule="known-properties"><div class="CodeMirror-lint-marker CodeMirror-lint-marker-warning">warning</div></td><td role="line">270</td><td role="sep">:</td><td role="col">25</td><td role="message" title="Unknown property &#39;option-font-weight&#39;.
+(known-properties)">Unknown property 'option-font-weight'.</td></tr></tbody></table></div>
+          </div>
+        </details>
+      </div>
+      <div id="footer" class="hidden">
+        <a href="https://github.com/openstyles/stylus/wiki/Usercss" target="_blank">Documentat­ion for Usercss</a>
+      </div>
+    </div>
+    <section id="sections" class="section-editor" data-section-count="1"><div class="section"><!-- not using DIV to make our CSS work for #sections > div:only-of-type .remove-section --><p class="deleted-section"><button class="restore-section">Restore removed section</button></p><label class="code-label" data-text="Headder">Code</label><div class="CodeMirror cm-s-twilight CodeMirror-wrap resize-grip-enabled" translate="no" style="height: 859px;" data-match-highlight-count="14"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 429px; left: 84.4063px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" style="position: absolute; bottom: -1em; padding: 0px; width: 1000px; height: 1em; outline: none;"></textarea></div><div class="CodeMirror-vscrollbar" tabindex="-1" cm-not-content="true" style="display: block; bottom: 0px;"><div style="min-width: 1px; height: 5978px;"></div></div><div class="CodeMirror-hscrollbar" tabindex="-1" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 53px; margin-bottom: -17px; border-right-width: 33px; min-height: 5972px; padding-right: 17px; padding-bottom: 0px;"><div style="position: relative; top: 1400px;"><div class="CodeMirror-lines" role="presentation"><div role="presentation" style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre class="CodeMirror-line-like">x</pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>102</div></div></div><div class="CodeMirror-measure"><pre class="CodeMirror-line" role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-family</span>: <span class="cm-variable">Helvetica</span> <span class="cm-variable">Neue</span>, <span class="cm-variable">Helvetica</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;</span></pre></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 30.4063px; top: 616px; height: 14px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">101</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-family</span>: <span class="cm-string">"Italian Plate No2 Bold"</span>, <span class="cm-string">"HelveticaNeue-CondensedBold"</span>, <span class="cm-string">"Arial Narrow"</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">102</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-weight</span>: <span class="cm-atom">normal</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">103</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property cm-error">font-smoothing</span>: <span class="cm-atom">antialiased</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">104</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-moz-</span><span class="cm-property cm-error">osx-font-smoothing</span>: <span class="cm-atom">grayscale</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">105</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-size</span>: <span class="cm-number">36px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">106</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">line-height</span>: <span class="cm-number">16px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">107</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">letter-spacing</span>: <span class="cm-number">-1px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">108</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">color</span>: <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#f00;">#f00</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">109</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">position</span>: <span class="cm-atom">relative</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">110</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">111</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.site-header</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.navigation-mobile</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.edit-profile</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.change-password</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.communication-preferences</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.create-account-section</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.layout-account</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.account-favorites</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.new-program-modal</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"text"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"email"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"password"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">input</span>[<span class="cm-tag">type</span>=<span class="cm-string">"number"</span>]:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">textarea</span>:<span class="cm-variable-3">focus</span>, <span class="cm-qualifier">.cart-summary</span> <span class="cm-tag">form</span> <span class="cm-tag">select</span>:<span class="cm-variable-3">focus</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">112</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">border</span>: <span class="cm-number">1px</span> <span class="cm-atom">solid</span> <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#202020;">#202020</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">113</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">outline</span>: <span class="cm-atom">none</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">114</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">115</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">116</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-comment">/*Container &amp; Background*/</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">117</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.layout-menu</span> <span class="cm-qualifier">.main</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">118</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">min-height</span>: <span class="cm-number">100vh</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">119</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#262626;">#262626</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">120</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">121</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.container</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">122</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">width</span>: <span class="cm-number">100%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">123</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">max-width</span>: <span class="cm-number">1374px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">124</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">margin</span>: <span class="cm-number">0</span> <span class="cm-atom">auto</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">125</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-variable cm-callee colorview colorview-swatch" style="--colorview-swatch:hsl(0, 0%, 25%);">hsl</span>(<span class="cm-number">0</span>, <span class="cm-number">0%</span>, <span class="cm-number">25%</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">126</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">padding</span>: <span class="cm-number">0</span> <span class="cm-number">1em</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">127</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">128</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.page-wrapper</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">129</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property">transition</span>: <span class="cm-meta">-webkit-</span><span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">130</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property cm-overlay cm-matchhighlight">transition</span>: <span class="cm-meta">-webkit-</span><span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">131</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-o-</span><span class="cm-property">transition</span>: <span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>;</span></pre></div><div class="CodeMirror-activeline" style="position: relative;"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -53px; width: 53px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">132</div><div class="CodeMirror-gutter-elt" style="left: 37px; width: 16px;"><div class="CodeMirror-lint-marker CodeMirror-lint-marker-warning"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property cm-overlay cm-matchhighlight CodeMirror-lint-mark CodeMirror-lint-mark-warning">t</span><span class="cm-property cm-overlay cm-matchhighlight">ransition</span>: <span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">133</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property cm-overlay cm-matchhighlight">transition</span>: <span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>, <span class="cm-meta">-webkit-</span><span class="cm-atom">transform</span> <span class="cm-number">0.2s</span> <span class="cm-atom">ease-out</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">134</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">will-change</span>: <span class="cm-atom">auto</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">135</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background</span>: <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#262626;">#262626</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">136</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">137</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.offer-card</span>[<span class="cm-tag">_ngcontent-bhb-c110</span>] {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">138</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">min-height</span>: <span class="cm-number">14.75em</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">139</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-variable cm-callee colorview colorview-swatch" style="--colorview-swatch:hsl(247, 0%, 48%);">hsl</span>(<span class="cm-number">247</span>, <span class="cm-number">0%</span>, <span class="cm-number">48%</span>);</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">140</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">141</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.offer-card</span> <span class="cm-qualifier">.card-details</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">142</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property">flex-basis</span>: <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">143</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-ms-</span><span class="cm-property cm-error">flex-preferred-size</span>: <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">144</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">flex-basis</span>: <span class="cm-number">0</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">145</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">margin</span>: <span class="cm-atom">auto</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">146</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">padding</span>: <span class="cm-number">1.5em</span> <span class="cm-number">1.25em</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">147</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property">align-self</span>: <span class="cm-atom">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">148</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-ms-</span><span class="cm-property cm-error">flex-item-align</span>: <span class="cm-atom">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">149</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">align-self</span>: <span class="cm-atom">center</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">150</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#716e87;">#716e87</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">151</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">152</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.description</span>[<span class="cm-tag">_ngcontent-bhb-c110</span>] <span class="cm-tag">description</span>[<span class="cm-tag">_ngcontent-bhb-c111</span>] {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">153</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-size</span>: <span class="cm-number">14px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">154</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-family</span>: <span class="cm-variable">Helvetica</span> <span class="cm-variable">Neue</span>, <span class="cm-variable">Helvetica</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">155</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">color</span>: <span class="cm-keyword colorview colorview-swatch" style="--colorview-swatch:white;">white</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">156</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">157</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.offer-card</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">158</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property cm-error">box-orient</span>: <span class="cm-atom">horizontal</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">159</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property cm-error">box-direction</span>: <span class="cm-atom">normal</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">160</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">161</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-ms-</span><span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">162</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">flex-direction</span>: <span class="cm-atom">row</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">163</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">background-color</span>: <span class="cm-atom colorview colorview-swatch" style="--colorview-swatch:#716e87;">#716e87</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">164</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;">}</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">165</div><div class="CodeMirror-gutter-elt" style="left: 29px; width: 8px;"><div class="CodeMirror-foldgutter-open CodeMirror-guttermarker-subtle"></div></div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"><span class="cm-qualifier">.price</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">166</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-family</span>: <span class="cm-string">"Italian Plate No2 Bold"</span>, <span class="cm-string">"HelveticaNeue-CondensedBold"</span>, <span class="cm-string">"Arial Narrow"</span>, <span class="cm-variable">Arial</span>, <span class="cm-atom">sans-serif</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">167</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-weight</span>: <span class="cm-atom">normal</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">168</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-webkit-</span><span class="cm-property cm-error">font-smoothing</span>: <span class="cm-atom">antialiased</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">169</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-meta">-moz-</span><span class="cm-property cm-error">osx-font-smoothing</span>: <span class="cm-atom">grayscale</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">170</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">font-size</span>: <span class="cm-number">36px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" aria-hidden="true" style="left: -53px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">171</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation" style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-property">line-height</span>: <span class="cm-number">1</span>;</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 33px; width: 1px; border-bottom: 0px solid transparent; top: 5972px;"></div><div class="CodeMirror-gutters" style="height: 6005px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div><div class="CodeMirror-gutter CodeMirror-foldgutter"></div><div class="CodeMirror-gutter CodeMirror-lint-markers"></div></div></div><div class="resize-grip" title="Double-click to maximize/restore the height"></div><div style="position: absolute; right: 0px; top: 0px; z-index: 7; pointer-events: none;"><div class="CodeMirror-selection-highlight-scrollbar" style="position: absolute; right: 0px; width: 16px; top: 94.4769px; height: 5.994px;"></div><div class="CodeMirror-selection-highlight-scrollbar" style="position: absolute; right: 0px; width: 16px; top: 282.289px; height: 9.99001px;"></div><div class="CodeMirror-selection-highlight-scrollbar" style="position: absolute; right: 0px; width: 16px; top: 765.805px; height: 5.994px;"></div><div class="CodeMirror-selection-highlight-scrollbar" style="position: absolute; right: 0px; width: 16px; top: 801.77px; height: 5.994px;"></div></div></div><div class="applies-to"><label>Applies to<a class="svg-inline-wrapper applies-to-help" tabindex="0"><svg class="svg-icon info"><use xlink:href="#svg-icon-help"></use></svg></a></label><ul class="applies-to-list"><li class="applies-to-item"><div class="select-resizer"><select name="applies-type" class="applies-type style-contributor"><option value="url">URL</option><option value="url-prefix">URLs starting with</option><option value="domain">URLs on the domain</option><option value="regexp">URLs matching the regexp</option></select><svg class="svg-icon select-arrow"><use xlink:href="#svg-icon-select-arrow"></use></svg></div><div class="applies-value-wrapper"><input name="applies-value" class="applies-value style-contributor" spellcheck="false"><a class="remove-applies-to" tabindex="0" title="Remove">Remove<svg class="svg-icon remove"><use xlink:href="#svg-icon-minus"></use></svg></a><a class="add-applies-to" tabindex="0" title="Add">Add<svg class="svg-icon add"><use xlink:href="#svg-icon-plus"></use></svg></a></div></li></ul></div><div class="edit-actions"><button class="remove-section">Remove section</button><button class="add-section" short-text="Add" long-text="Add another section"></button><button class="clone-section">Clone</button><button class="move-section-up"></button><button class="move-section-down"></button><button class="beautify-section">Beautify</button><button class="test-regexp">RegExp test</button></div></div></section>
+    <div id="help-popup" class="big" style="pointer-events: auto;">
+      <div class="title">Style in Mozilla format</div><svg id="sections-help" class="svg-icon dismiss"><use xlink:href="#svg-icon-close"></use></svg>
+      <div class="contents"></div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+
+      <symbol id="svg-icon-external-link" viewBox="0 0 8 8">
+        <path d="M0 0v8h8v-2h-1v1h-6v-6h1v-1h-2zm4 0l1.5 1.5-2.5 2.5 1 1 2.5-2.5 1.5 1.5v-4h-4z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-help" viewBox="0 0 14 16" alt="Help">
+        <path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-close" viewBox="0 0 12 16">
+        <path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-v" viewBox="0 0 16 16">
+        <path d="M8,11.5L2.8,6.3l1.5-1.5L8,8.6l3.7-3.7l1.5,1.5L8,11.5z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-config" viewBox="0 0 16 16">
+        <path d="M13.3,12.8l1.5-2.6l-2.2-1.5c0-0.2,0.1-0.5,0.1-0.7c0-0.2,0-0.5-0.1-0.7l2.2-1.5l-1.5-2.6l-2.4,1.2 c-0.4-0.3-0.8-0.5-1.2-0.7L9.5,1h-3L6.3,3.7C5.9,3.8,5.5,4.1,5.1,4.4L2.7,3.2L1.2,5.8l2.2,1.5c0,0.2-0.1,0.5-0.1,0.7 c0,0.2,0,0.5,0.1,0.7l-2.2,1.5l1.5,2.6l2.4-1.2c0.4,0.3,0.8,0.5,1.2,0.7L6.5,15h3l0.2-2.7c0.4-0.2,0.8-0.4,1.2-0.7L13.3,12.8z  M8,10.3c-1.3,0-2.3-1-2.3-2.3c0-1.3,1-2.3,2.3-2.3c1.3,0,2.3,1,2.3,2.3C10.3,9.3,9.3,10.3,8,10.3z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-select-arrow" viewBox="0 0 1792 1792">
+        <path fill-rule="evenodd" d="M1408 704q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-checked" viewBox="0 0 1000 1000">
+        <path fill-rule="evenodd" d="M983.2,184.3L853,69.8c-4-3.5-9.3-5.3-14.5-5c-5.3,0.4-10.3,2.8-13.8,6.8L352.3,609.2L184.4,386.9c-3.2-4.2-8-7-13.2-7.8c-5.3-0.8-10.6,0.6-14.9,3.9L18,487.5c-8.8,6.7-10.6,19.3-3.9,28.1L325,927.2c3.6,4.8,9.3,7.7,15.3,8c0.2,0,0.5,0,0.7,0c5.8,0,11.3-2.5,15.1-6.8L985,212.6C992.3,204.3,991.5,191.6,983.2,184.3z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-plus" viewBox="0 0 8 8">
+        <path fill-rule="evenodd" d="M3 0v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2z"></path>
+      </symbol>
+
+      <symbol id="svg-icon-minus" viewBox="0 0 8 8">
+        <path fill-rule="evenodd" d="M0 3v2h8v-2h-8z"></path>
+      </symbol>
+
+    </svg>
+  
+
+</body><style id="stylus-18" type="text/css" class="stylus">/*! Stylus-Dark v1.3 (2018-09-14)
+      Repository: https://github.com/overdodactyl/Stylus-Dark
+      License:    https://creativecommons.org/licenses/by-sa/4.0/
+
+      Code Mirror based on Firefox
+*/
+    #notes,
+    body {
+        background: #38383d!important;
+        color: #b1b1b3!important
+    }
+    #header {
+        color: silver!important;
+        background: #2a2a2e!important;
+        border-style: none!important
+    }
+    #stylus-popup {
+        background: #4a4a4f!important;
+        color: silver!important
+    }
+    #hotkey-info[data-active] {
+        border-left: 2px solid #2a2a2e!important
+    }
+    #hotkey-info div {
+        border-top: 1px solid #2a2a2e!important;
+        background-color: #2a2a2e!important
+    }
+    #help-popup,
+    #sections,
+    .newUI .target {
+        color: #b1b1b3!important
+    }
+    #help-popup,
+    #message-box > div,
+    #message-box-buttons,
+    #message-box-title,
+    body {
+        background: #2a2a2e!important
+    }
+    .search-result {
+        background: #4a4a4f!important;
+        border-color: #737373!important
+    }
+    .search-result:hover {
+        border-color: #b1b1b3!important
+    }
+    .search-result-meta {
+        background-color: #4a4a4f!important;
+        color: #b1b1b3!important
+    }
+    button,
+    input:not([type]),
+    select {
+        font-family: arial, sans-serif!important
+    }
+    input[type=checkbox]:not(.slider) {
+        background: #38383d!important
+    }
+    .applies-to li,
+    .firefox select,
+    input {
+        background-color: #38383d!important;
+        color: silver!important;
+        border: 1px solid #4a4a4f!important
+    }
+    .filter-selection select {
+        background-color: transparent!important;
+        border: none!important
+    }
+    #filters .filter-selection:hover {
+        background-color: transparent!important
+    }
+    button {
+        background: #2a2a2e!important;
+        border: 1px solid #484848!important;
+        color: silver!important;
+        border-radius: 3px!important
+    }
+    .svg-icon.checked {
+        fill: #45a1ff!important
+    }
+    button:hover {
+        color: #45a1ff!important
+    }
+    a,
+    a:visited {
+        color: #e1e1e1!important
+    }
+    #save-button:after {
+        content: 'd'!important
+    }
+    body.dirty #save-button:after {
+        content: '?'!important
+    }
+    .newUI .entry:hover .svg-icon:hover,
+    .svg-icon:hover {
+        fill: #45a1ff!important
+    }
+    #message-box.danger #message-box-title {
+        background-color: #b22222!important
+    }
+    .newUI .can-update .update,
+    .newUI .no-update:not(.update-problem):not(.update-done) .up-to-date {
+        color: #000!important
+    }
+    .svg-icon {
+        fill: #b1b1b3!important
+    }
+    #url {
+        filter: invert(65%)!important
+    }
+    .CodeMirror-gutters {
+        color: #b1b1b3!important
+    }
+    .newUI .entry {
+        background: #38383d!important
+    }
+    .newUI .entry:hover {
+        background: #2a2a2e!important
+    }
+    .disabled h2::after {
+        border: 1px solid #444!important
+    }
+    .svg-icon.select-arrow {
+        fill: silver!important
+    }
+    .newUI .entry .style-name:hover::before {
+        background: 0 0!important
+    }
+    body.all-styles-hidden-by-filters::after,
+    body.all-styles-hidden-by-filters::before {
+        color: #45a1ff!important
+    }
+    .active #filters-stats {
+        background-color: #45a1ff!important;
+        border-color: #45a1ff!important
+    }
+    #reset-filters {
+        fill: #45a1ff!important
+    }
+    .CodeMirror {
+        border: 1px solid #4a4a4f;
+        border-radius: 4px!important
+    }
+    .Codemirror-hints {
+        background: #353b48!important;
+        border-color: #737373!important
+    }
+    .Codemirror-hint {
+        color: #d7d7db!important
+    }
+    .CodeMirror {
+        background: #2a2a2e!important;
+        color: #b1b1b3!important
+    }
+    div.CodeMirror-selected {
+        background: #353b48!important
+    }
+    .CodeMirror-line > span > span::selection,
+    .CodeMirror-line > span::selection,
+    .CodeMirror-line::selection {
+        background: #353b48!important
+    }
+    .CodeMirror-line > span > span::-moz-selection,
+    .CodeMirror-line > span::-moz-selection,
+    .CodeMirror-line::-moz-selection {
+        background: #353b48!important
+    }
+    .CodeMirror-gutters {
+        background: #2a2a2e!important;
+        border-right: 0 solid #4a4a4f!important
+    }
+    .CodeMirror-guttermarker,
+    .CodeMirror-guttermarker-subtle {
+        color: #555!important
+    }
+    .CodeMirror-linenumber {
+        color: #939393!important
+    }
+    .CodeMirror-cursor {
+        border-left: 1px solid #fff!important
+    }
+    span.cm-comment {
+        color: #939393!important
+    }
+    span.cm-atom,
+    span.cm-attribute,
+    span.cm-builtin,
+    span.cm-error,
+    span.cm-keyword,
+    span.cm-quote {
+        color: #ff7de9!important
+    }
+    span.cm-number,
+    span.cm-string,
+    span.cm-string-2 {
+        color: #6b89ff!important
+    }
+    span.cm-hr,
+    span.cm-meta {
+        color: #939393!important
+    }
+    span.cm-header,
+    span.cm-qualifier,
+    span.cm-variable-2 {
+        color: #75bfff!important
+    }
+    span.cm-property {
+        color: #86de74!important
+    }
+    span.cm-bracket,
+    span.cm-def,
+    span.cm-link:visited,
+    span.cm-tag {
+        color: #75bfff!important
+    }
+    span.cm-variable {
+        color: #b98eff!important
+    }
+    span.cm-variable-3 {
+        color: #d7d7db!important
+    }
+    span.cm-link {
+        color: #737373!important
+    }
+    span.cm-operator {
+        color: #b1b1b3!important
+    }
+    span.cm-special {
+        color: #d7d7db!important
+    }
+    .CodeMirror-activeline-background {
+        background: rgba(185, 215, 253, .15)!important
+    }
+    .CodeMirror-matchingbracket {
+        outline: rgba(255, 255, 255, .25) solid 1px!important;
+        color: #fff!important
+    }
+    select {
+        color: silver;
+    }
+    option,
+    optgroup {
+        background-color: #2a2a2e
+    }</style></html>
